@@ -1,18 +1,28 @@
 .signupParentDiv {
     border: 1px solid black;
-    width: max-content;
-    padding: 10px;
+    width: 450px;
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 6px;
   }
-  
+  .signupParentDiv img{
+    
+    margin-left: 100px;
+  }
+  .signupParentDiv label{
+    /* margin-top: 2%; */
+    font-style: italic;
+    font-weight: bold;
+  }
   .signupParentDiv .input {
+    margin-top: 10px;
+    width: 33em;
     border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
+    /* border-left-color: transparent; */
+    /* border-right-color: transparent; */
     outline-color: transparent;
   }
   
