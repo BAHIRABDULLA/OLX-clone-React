@@ -8,6 +8,7 @@ import ViewPost from './Pages/ViewPost'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { AuthContext, FirebaseContext } from './Store/FirebaseContext'
 import { onAuthStateChanged } from 'firebase/auth'
+import Post from './Store/PostContext'
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
   return (
 
     <div>
+      <Post>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -31,6 +33,7 @@ const App = () => {
           <Route path='/view'  element={<ViewPost/>}/>
         </Routes>
       </Router>
+      </Post>
     </div>
   )
 }
